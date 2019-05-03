@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 5</title>
+</head>
+<body>
+	<script>
+		let diemKtra = parseInt(prompt('Nhập vào điểm kiểm tra'));
+		let diemGiuaky = parseInt(prompt('Nhập vào điểm thi giữa kỳ'));
+		let diemCuoiky = parseInt(prompt('Nhập vào điểm thi cuối kỳ'));
+
+		let diemTB = (diemKtra + diemGiuaky*3 + diemCuoiky * 6) / 10;
+
+		if (diemTB > 8.5) {
+			alert(diemTB + '- Xếp loại học lực A');
+		} else if (diemTB > 7) {
+			alert(diemTB + '- Xếp loại học lực B');
+		} else if (diemTB > 5.5) {
+			alert(diemTB + '- Xếp loại học lực C');
+		} else if (diemTB > 5) {
+			alert(diemTB + '- Xếp loại học lực D+');
+		} else if (diemTB > 4) {
+			alert(diemTB + '- Xếp loại học lực D');
+		} else if (diemTB > 3) {
+			alert(diemTB + '- Xếp loại học lực F+');
+		} else {
+			alert(diemTB + '- Xếp loại học lực F');
+		}
+
+	</script>
+</body>
+</html>
